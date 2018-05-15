@@ -1,0 +1,110 @@
+body{
+  background: #f1f1f1;
+}
+ul,p,h1,h2,h3,h4,h5{
+  padding: 0;
+  margin: 0;
+}
+input[type=button]{
+  -webkit-appearance:none;
+  outline:none
+}
+.app-container>div{
+  background-color: #FFF;
+}
+.el-pagination{
+  text-align: right;
+  padding: 15px;
+}
+.el-menu-item {
+  display: flex;
+  align-items: center;
+}
+.sidebar-container .svg-icon{
+  font-size: 16px;
+}
+// search input style for table
+.mini-search {
+  text-align: right;
+  padding: 10px;
+  border-bottom: 1px solid #F1F1F1;
+  .el-input{
+    width: 260px;
+  }
+  input{
+    padding-right: 0;
+    height: 35px;
+    border-right: none;
+    font-size: 13px;
+    line-height: 30px;
+  }
+  .el-input-group__append {
+    button{
+      color: #fff;
+      background-color: #409eff;
+      border-color: #409eff;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      height: 35px;
+      padding: 0 10px;
+      font-size: 13px;
+      &:active {
+          background: #66b1ff;
+          border-color: #66b1ff;
+          color: #fff;
+      }
+    }
+  }
+}
+
+
+.mobile {
+  .app-container {
+    padding: 10px!important;
+  }
+  .project-user-main{
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    .avatar-img{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #app{
+    // 登录页
+    .login-container .login-form{
+      width: inherit;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    // 项目排列
+    .project-main .item_list li{
+      max-width: initial;
+      width: 100%;
+      margin-right: 0;
+    }
+    // 添加用户
+    .adduser{
+      width: 100%;
+    }
+    // 提示框
+    .el-dialog{
+      width: 90%!important;
+      .el-dialog__body{
+        padding: 20px;
+        padding-bottom: 0;
+      }
+      label.el-form-item__label{
+        width: 60px!important;
+      }
+      .el-form-item__content{
+        margin-left: 60px!important;
+      }
+      .el-dialog__footer{
+        text-align: right;
+      }
+    }
+  }
+}
